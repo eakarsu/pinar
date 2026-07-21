@@ -32,7 +32,7 @@ const About = () => {
             <div className="relative">
               <div className="bg-gradient-to-tr from-primary/20 to-accent/20 absolute inset-0 rounded-2xl transform -rotate-3"></div>
               <img 
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/reference-placeholder.svg"
                 alt="Lindy AI team" 
                 className="relative z-10 rounded-2xl shadow-lg"
               />
@@ -178,21 +178,21 @@ const teamMembers: TeamMemberProps[] = [
   {
     name: 'Sarah Chen',
     title: 'Co-founder & CEO',
-    image: 'https://images.pexels.com/photos/3767392/pexels-photo-3767392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'David Rodriguez',
     title: 'Co-founder & CTO',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'Emily Johnson',
     title: 'Chief Product Officer',
-    image: 'https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
   },
 ];

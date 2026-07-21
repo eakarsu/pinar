@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "artifactType": "static-external-site-reference",
+  "disposition": "retain-internal-reference",
+  "deployableApplication": false,
+  "primaryUser": "an accountable repository maintainer performing a local visual review",
+  "workflow": "install dependencies, validate the boundary, build immutable static files, start a loopback-only preview, inspect archived routes, then stop the preview",
+  "runtimeAcceptance": "static-build-preview-only",
+  "loginAcceptance": "not_applicable",
+  "persistenceAcceptance": "not_applicable",
+  "migrationAcceptance": "not_applicable",
+  "backupAcceptance": "not_applicable",
+  "capabilities": {
+    "serverDomainLogic": false,
+    "persistentData": false,
+    "authentication": false,
+    "authorization": false,
+    "tenantIsolation": false,
+    "userDataSubmission": false,
+    "payments": false,
+    "externalApi": false,
+    "remoteAssetLoading": false,
+    "auditableStateChanges": false
+  },
+  "runtime": {
+    "artifactDirectory": "dist",
+    "bindAddress": "127.0.0.1",
+    "configuration": ["PORT"],
+    "evidencePath": "/boundary.json"
+  },
+  "acceptanceCriteria": [
+    "boundary validation, lint, tests, production build, distribution verification, dependency audit, and secret scan pass",
+    "the built boundary evidence exactly matches this file",
+    "archived content is inert and cannot accept credentials, personal data, payments, or contact submissions",
+    "the production artifact loads no remote fonts, images, scripts, styles, or API connections",
+    "the launcher binds to loopback, refuses an occupied port, and never installs, builds, migrates, seeds, deletes, or terminates another process"
+  ],
+  "controls": [
+    "machine-readable-boundary",
+    "always-visible-reference-disclosure",
+    "inert-archived-content",
+    "content-security-policy",
+    "noindex",
+    "loopback-only-launcher",
+    "compiled-boundary-evidence",
+    "ci-quality-and-secret-gates"
+  ],
+  "allowedOperations": ["local-build", "loopback-preview", "visual-review", "owner-approved-extraction"],
+  "prohibitedOperations": ["public-deploy", "accept-credentials", "accept-personal-data", "accept-payments", "claim-external-api", "represent-as-upstream-service"],
+  "unresolved": ["accountable-owner", "source-provenance", "license-permission", "trademark-content-review", "security-patching-owner"]
+}

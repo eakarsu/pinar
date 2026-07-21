@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,10 +15,6 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
 
   return (
     <header
@@ -55,8 +50,8 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="btn btn-secondary">Sign in</button>
-            <button className="btn btn-primary">Get started</button>
+            <button disabled title="Static reference: no account system" className="btn btn-secondary opacity-60 cursor-not-allowed">Sign in unavailable</button>
+            <button disabled title="Static reference: no product signup" className="btn btn-primary opacity-60 cursor-not-allowed">Reference only</button>
           </div>
 
           {/* Mobile menu button */}
@@ -82,18 +77,18 @@ const Navbar = () => {
             <div className="px-4 pt-2 pb-6 space-y-4">
               <div className="space-y-2">
                 <p className="text-sm font-medium text-gray-500 px-3">Resources</p>
-                <Link to="/blog" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Blog</Link>
-                <Link to="/docs" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Documentation</Link>
-                <Link to="/help" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Help Center</Link>
-                <Link to="/api" className="block px-3 py-2 text-gray-600 hover:text-gray-900">API</Link>
+                <Link to="/blog" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">Blog</Link>
+                <Link to="/docs" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">Documentation</Link>
+                <Link to="/help" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">Help Center</Link>
+                <Link to="/api" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">API</Link>
               </div>
               <div className="space-y-2">
-                <Link to="/pricing" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Pricing</Link>
-                <Link to="/contact" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</Link>
+                <Link to="/pricing" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">Pricing</Link>
+                <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</Link>
               </div>
               <div className="space-y-2 pt-4">
-                <button className="w-full btn btn-secondary">Sign in</button>
-                <button className="w-full btn btn-primary">Get started</button>
+                <button disabled title="Static reference: no account system" className="w-full btn btn-secondary opacity-60 cursor-not-allowed">Sign in unavailable</button>
+                <button disabled title="Static reference: no product signup" className="w-full btn btn-primary opacity-60 cursor-not-allowed">Reference only</button>
               </div>
             </div>
           </motion.div>

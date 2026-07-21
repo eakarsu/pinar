@@ -47,7 +47,7 @@ const Home = () => {
             >
               <div className="relative bg-white shadow-smooth rounded-2xl overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="/reference-placeholder.svg"
                   alt="Lindy AI Dashboard" 
                   className="w-full h-auto rounded-lg"
                 />
@@ -125,7 +125,7 @@ const Home = () => {
               </div>
               <div className="hidden lg:block relative">
                 <img 
-                  src="https://images.pexels.com/photos/5797908/pexels-photo-5797908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="/reference-placeholder.svg"
                   alt="Photo memories" 
                   className="absolute inset-0 h-full w-full object-cover"
                 />

@@ -1,4 +1,5 @@
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 const Team = () => {
   return (
@@ -106,13 +107,13 @@ const TeamMember = ({
         <p className="text-gray-600 mb-4">{title}</p>
         <div className="flex space-x-3">
           {linkedIn && (
-            <SocialLink href={linkedIn} Icon={Linkedin} />
+            <SocialLink href={linkedIn} Icon={ExternalLink} />
           )}
           {twitter && (
-            <SocialLink href={twitter} Icon={Twitter} />
+            <SocialLink href={twitter} Icon={ExternalLink} />
           )}
           {github && (
-            <SocialLink href={github} Icon={Github} />
+            <SocialLink href={github} Icon={ExternalLink} />
           )}
         </div>
       </div>
@@ -120,7 +121,7 @@ const TeamMember = ({
   );
 };
 
-const SocialLink = ({ href, Icon }: { href: string; Icon: React.ComponentType<any> }) => (
+const SocialLink = ({ href, Icon }: { href: string; Icon: LucideIcon }) => (
   <a
     href={href}
     target="_blank"
@@ -144,14 +145,14 @@ const leadershipTeam: TeamMemberProps[] = [
   {
     name: 'Sarah Chen',
     title: 'Co-founder & CEO',
-    image: 'https://images.pexels.com/photos/3767392/pexels-photo-3767392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'David Rodriguez',
     title: 'Co-founder & CTO',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
     github: 'https://github.com',
@@ -159,7 +160,7 @@ const leadershipTeam: TeamMemberProps[] = [
   {
     name: 'Emily Johnson',
     title: 'Chief Product Officer',
-    image: 'https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
   },
 ];
@@ -168,28 +169,28 @@ const engineeringTeam: TeamMemberProps[] = [
   {
     name: 'Alex Kim',
     title: 'Lead AI Engineer',
-    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     github: 'https://github.com',
   },
   {
     name: 'Maya Patel',
     title: 'Senior Backend Engineer',
-    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     github: 'https://github.com',
   },
   {
     name: 'Jason Lee',
     title: 'Frontend Engineer',
-    image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     github: 'https://github.com',
   },
   {
     name: 'Sophie Wilson',
     title: 'Data Scientist',
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
@@ -199,20 +200,20 @@ const productTeam: TeamMemberProps[] = [
   {
     name: 'Michael Torres',
     title: 'Product Manager',
-    image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'Lisa Wang',
     title: 'Lead Product Designer',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
   },
   {
     name: 'Carlos Mendez',
     title: 'UX Researcher',
-    image: 'https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
   },
 ];
@@ -221,21 +222,21 @@ const marketingTeam: TeamMemberProps[] = [
   {
     name: 'Jessica Davis',
     title: 'Marketing Director',
-    image: 'https://images.pexels.com/photos/1181695/pexels-photo-1181695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'Ryan Thompson',
     title: 'Content Strategist',
-    image: 'https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
     twitter: 'https://twitter.com',
   },
   {
     name: 'Aisha Jackson',
     title: 'Customer Success Manager',
-    image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     linkedIn: 'https://linkedin.com',
   },
 ];

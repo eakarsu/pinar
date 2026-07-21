@@ -21,6 +21,7 @@ import Contact from './pages/company/Contact';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy';
 import TermsOfService from './pages/legal/TermsOfService';
 import CookiePolicy from './pages/legal/CookiePolicy';
+import ReferenceUnavailable from './pages/ReferenceUnavailable';
 
 function App() {
   return (
@@ -41,11 +42,13 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/press" element={<Press />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pricing" element={<ReferenceUnavailable topic="Pricing" />} />
         
         {/* Legal pages */}
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/cookies" element={<CookiePolicy />} />
+        <Route path="*" element={<ReferenceUnavailable topic="Route" />} />
       </Route>
     </Routes>
   );

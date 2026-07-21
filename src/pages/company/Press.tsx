@@ -293,7 +293,7 @@ const newsArticles: NewsArticleProps[] = [
   {
     id: 1,
     publication: "TechCrunch",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/TechCrunch_logo.svg/1280px-TechCrunch_logo.svg.png",
+    logo: "/reference-placeholder.svg",
     title: "Lindy AI's approach to photo organization could change how we interact with our memories",
     date: "May 2, 2023",
     url: "#"
@@ -301,7 +301,7 @@ const newsArticles: NewsArticleProps[] = [
   {
     id: 2,
     publication: "The Verge",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/The_Verge_logo.svg/1280px-The_Verge_logo.svg.png",
+    logo: "/reference-placeholder.svg",
     title: "Review: Lindy AI makes finding old photos actually enjoyable",
     date: "April 18, 2023",
     url: "#"
@@ -309,7 +309,7 @@ const newsArticles: NewsArticleProps[] = [
   {
     id: 3,
     publication: "Forbes",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Forbes_logo.svg/1280px-Forbes_logo.svg.png",
+    logo: "/reference-placeholder.svg",
     title: "The AI-Powered App That's Changing How We Organize Photos",
     date: "March 25, 2023",
     url: "#"
@@ -317,7 +317,7 @@ const newsArticles: NewsArticleProps[] = [
   {
     id: 4,
     publication: "Wired",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Wired_logo.svg/1280px-Wired_logo.svg.png",
+    logo: "/reference-placeholder.svg",
     title: "Lindy AI's Machine Learning Approach Sets New Standard for Photo Organization",
     date: "February 12, 2023",
     url: "#"

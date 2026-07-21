@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title description">
+  <title id="title">Archived visual placeholder</title>
+  <desc id="description">A local placeholder replacing an unverified remote image.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff" />
+      <stop offset="1" stop-color="#f8fafc" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#background)" />
+  <rect x="270" y="230" width="660" height="290" rx="32" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <path d="M420 445l105-110 90 85 75-65 105 90" fill="none" stroke="#94a3b8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="730" cy="325" r="38" fill="#bfdbfe" />
+  <text x="600" y="600" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="34">Archived visual reference</text>
+</svg>

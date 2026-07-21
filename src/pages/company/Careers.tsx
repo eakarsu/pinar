@@ -32,22 +32,22 @@ const Careers = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/reference-placeholder.svg"
                 alt="Team collaboration" 
                 className="rounded-lg shadow-sm h-64 w-full object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/reference-placeholder.svg"
                 alt="Office environment" 
                 className="rounded-lg shadow-sm h-64 w-full object-cover transform translate-y-8"
               />
               <img 
-                src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/reference-placeholder.svg"
                 alt="Team meeting" 
                 className="rounded-lg shadow-sm h-64 w-full object-cover transform translate-y-4"
               />
               <img 
-                src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/reference-placeholder.svg"
                 alt="Design thinking" 
                 className="rounded-lg shadow-sm h-64 w-full object-cover"
               />

@@ -1,0 +1,5 @@
+# False positives: literal YOUR_API_KEY examples in removed illustrative API documentation.
+645c962a24c1cb0d30e26854bbb0b1d010e875de:src/pages/resources/API.tsx:curl-auth-header:80
+645c962a24c1cb0d30e26854bbb0b1d010e875de:src/pages/resources/API.tsx:curl-auth-header:100
+645c962a24c1cb0d30e26854bbb0b1d010e875de:src/pages/resources/API.tsx:curl-auth-header:109
+645c962a24c1cb0d30e26854bbb0b1d010e875de:src/pages/resources/API.tsx:curl-auth-header:117

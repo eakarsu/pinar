@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Twitter, Linkedin, Github, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -14,12 +13,7 @@ const Footer = () => {
             <p className="text-gray-600 mb-6 max-w-md">
               Organize your photos with AI. Discover memories, create collections, and find what you're looking for instantly.
             </p>
-            <div className="flex space-x-4">
-              <SocialLink href="https://twitter.com" Icon={Twitter} />
-              <SocialLink href="https://linkedin.com" Icon={Linkedin} />
-              <SocialLink href="https://github.com" Icon={Github} />
-              <SocialLink href="https://instagram.com" Icon={Instagram} />
-            </div>
+            <p className="text-xs text-gray-500">Outbound social profiles are disabled in this archive.</p>
           </div>
 
           <div>
@@ -55,7 +49,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Lindy AI. All rights reserved.
+            Internal visual reference only — not the upstream service.
           </p>
           <div className="flex items-center mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 hover:text-gray-600 text-sm mx-3">
@@ -64,9 +58,9 @@ const Footer = () => {
             <Link to="/terms" className="text-gray-500 hover:text-gray-600 text-sm mx-3">
               Terms
             </Link>
-            <button className="text-gray-500 hover:text-gray-600 text-sm mx-3">
+            <span className="text-gray-500 text-sm mx-3">
               Cookie Preferences
-            </button>
+            </span>
           </div>
         </div>
       </div>
@@ -80,17 +74,6 @@ const FooterLink = ({ to, children }: { to: string; children: React.ReactNode })
       {children}
     </Link>
   </li>
-);
-
-const SocialLink = ({ href, Icon }: { href: string; Icon: React.ComponentType<any> }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-gray-600 hover:text-primary transition-colors"
-  >
-    <Icon className="h-5 w-5" />
-  </a>
 );
 
 export default Footer;

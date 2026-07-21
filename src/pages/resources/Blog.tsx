@@ -45,20 +45,13 @@ const Blog = () => {
               </div>
               
               <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-lg font-semibold mb-4">Subscribe to our newsletter</h3>
+                <h3 className="text-lg font-semibold mb-4">Newsletter unavailable</h3>
                 <p className="text-gray-600 mb-4">
-                  Get the latest articles and news delivered to your inbox.
+                  This static archive does not collect email addresses or submit data.
                 </p>
-                <form className="space-y-3">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                  <Button variant="primary" className="w-full">
-                    Subscribe
-                  </Button>
-                </form>
+                <p className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950">
+                  No subscription service is implemented.
+                </p>
               </div>
             </div>
           </div>
@@ -146,13 +139,13 @@ const blogPosts: BlogPostType[] = [
     title: 'How AI is revolutionizing photo organization',
     excerpt:
       'Learn how artificial intelligence is making it easier than ever to organize and search through your photo library.',
-    image: 'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     category: 'AI Technology',
     readTime: 5,
     date: 'May 22, 2023',
     author: {
       name: 'Alex Johnson',
-      avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      avatar: '/reference-placeholder.svg',
     },
   },
   {
@@ -160,13 +153,13 @@ const blogPosts: BlogPostType[] = [
     title: 'Introducing natural language search for your photos',
     excerpt:
       'Our latest feature lets you search your photos using natural language. Just type what you\'re looking for, and our AI will find it.',
-    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     category: 'Product Updates',
     readTime: 3,
     date: 'May 15, 2023',
     author: {
       name: 'Sarah Chen',
-      avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      avatar: '/reference-placeholder.svg',
     },
   },
   {
@@ -174,13 +167,13 @@ const blogPosts: BlogPostType[] = [
     title: '5 tips for organizing your family photo collection',
     excerpt:
       'Follow these expert tips to organize your family photos and make them easier to find and enjoy for generations to come.',
-    image: 'https://images.pexels.com/photos/5650893/pexels-photo-5650893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/reference-placeholder.svg',
     category: 'Tips & Tricks',
     readTime: 7,
     date: 'May 8, 2023',
     author: {
       name: 'Michael Torres',
-      avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      avatar: '/reference-placeholder.svg',
     },
   },
 ];
